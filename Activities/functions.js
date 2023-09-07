@@ -8,8 +8,14 @@
 //   console.log("Ticket Price: £7.50");
 // }
 
-const favColor = () => {
-  console.log("My Favourite Color is Blue.");
+// const favColor = (color) => {
+//   console.log(`My favourite color is ${color}.`);
+// };
+
+// favColor("purple");
+
+const addUp = (num1, num2) => {
+  return num1 + num2;
 };
 
-favColor();
+console.log(addUp(4, 9));
