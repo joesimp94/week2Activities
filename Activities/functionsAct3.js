@@ -4,10 +4,11 @@ let amount = 123;
 const cashWithdrawl = (accNumber, pinNumber, amount) => {
   function cashMachine() {
     if (accNumber == 12345678 && pinNumber == 1234 && amount > 0) {
-      return "Please take your cash from the slot below.";
+      return console.log("Please take your cash from the slot below.");
     } else {
-      return "Step away from the machine.";
+      return console.log("Step away from the machine.");
     }
   }
 };
-console.log(cashMachine());
+cashWithdrawl(12345678, 1234, 123);
+console.log(`Withdrawing £${amount} from account ${accNumber}`);

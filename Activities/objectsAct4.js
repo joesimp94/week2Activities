@@ -20,10 +20,26 @@ let coffeeShop = {
     let drinksTotal = 0;
 
     for (let i = 0; i < drinks.length; i++) {
+      console.log(drinks[i]);
       let indexOfItem = this.drinkMenu.indexOf(drinks[i]);
 
       if (indexOfItem !== -1) {
         this.total += this.drinkMenu[indexOfItem + 1];
+      } else {
+        console.log("Item not found.");
+      }
+    }
+  },
+
+  foodOrder(food) {
+    let foodTotal = 0;
+
+    for (let i = 0; i < food.length; i++) {
+      console.log(food[i]);
+      let indexOfItem = this.foodMenu.indexOf(food[i]);
+
+      if (indexOfItem !== -1) {
+        this.total += this.foodMenu[indexOfItem + 1];
       } else {
         console.log("Item not found.");
       }
@@ -33,3 +49,4 @@ let coffeeShop = {
 };
 
 coffeeShop.drinkOrder(["Coffee", "Coffee", "Tea"]);
+coffeeShop.foodOrder(["Sandwich", "Cake"]);
